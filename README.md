@@ -1,5 +1,3 @@
----
-
 # 🏷️ Portfólio Profissional - João Pedro Silva Dantas 👨‍💻
 
 > [!NOTE]
