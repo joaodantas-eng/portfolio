@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos | João Pedro Silva Dantas</title>
+  <meta name="description" content="Portfólio profissional de João Pedro Silva Dantas, estudante de Engenharia de Software.">
+  <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <!-- CABEÇALHO (igual em todas as páginas) -->
+  <header class="cabecalho">
+    <div class="container">
+
+      <!-- Botões do canto direito (tema e idioma). Ficam ativos na Sprint 2 -->
+      <div class="acoes">
+        <button class="acao" type="button" disabled title="Mudar tema (disponível na Sprint 2)" aria-label="Mudar tema"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="acao" type="button" disabled title="Mudar idioma (disponível na Sprint 2)" aria-label="Mudar idioma">PT</button>
+      </div>
+
+      <div class="perfil">
+        <a class="nome" href="index.html">João Pedro <span>Silva Dantas</span></a>
+        <img class="foto" src="/img/foto.webp" width="480" height="480" alt="Foto de João Pedro Silva Dantas">
+        <p class="resumo">Estudante de Engenharia de Software na PUC Minas, com interesse em desenvolvimento backend e olhar de designer.</p>
+      </div>
+
+    </div>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="menu" aria-label="Menu principal">
+      <ul class="container">
+        <li><a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Sobre mim</span></a></li>
+        <li><a href="projetos.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>Projetos</span></a></li>
+        <li><a href="experiencias.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span>Experiências</span></a></li>
+        <li><a href="contato.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>Contato</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ÁREA DE CONTEÚDO -->
+  <main class="container conteudo">
+    <h1 class="so-leitor-de-tela">Projetos</h1>
+
+    <section>
+      <h2 class="titulo-secao">Linha do tempo de projetos</h2>
+      <ol class="linha-do-tempo">
+        <li class="marco">
+          <p class="marco-data">Abril de 2026</p>
+          <article class="cartao">
+            <img src="/img/projetos/firefighter-radar.webp" width="1000" height="563" alt="Tela do Firefighter Radar com o mapa de focos de incêndio">
+            <h3>Firefighter Radar</h3>
+            <p>Sistema criado durante a graduação para registrar e acompanhar focos de incêndio em um mapa, com a participação de bombeiros e brigadistas na identificação e na resposta às ocorrências.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Leaflet</li></ul>
+            <p class="links"><span class="selo">Repositório privado</span></p>
+          </article>
+        </li>
+        <li class="marco">
+          <p class="marco-data">Junho de 2026</p>
+          <article class="cartao">
+            <img src="/img/projetos/drecut.webp" width="1000" height="563" alt="Tela do jogo Drecut com o mapa e dois personagens">
+            <h3>Drecut: Fragmentos da Verdade</h3>
+            <p>Jogo de investigação criado como projeto final de Introdução a Algoritmos. O jogador explora o mapa, conversa com NPCs e resolve desafios para avançar na investigação.</p>
+            <ul class="tags"><li>Python</li><li>Pygame</li><li>Pytest</li></ul>
+            <p class="links"><a href="https://github.com/5byp8r/TrabalhoFinalIntroAlgs" target="_blank" rel="noopener">Código no GitHub</a></p>
+          </article>
+        </li>
+        <li class="marco">
+          <p class="marco-data">Julho de 2026</p>
+          <article class="cartao">
+            <img src="/img/projetos/jr-film.webp" width="1000" height="563" alt="Página inicial do site da JR Film, oficina mecânica de Nova Serrana">
+            <h3>JR Film: Site Institucional</h3>
+            <p>Site institucional da JR Film, loja de acessórios e oficina mecânica de Nova Serrana (MG), com serviços, promoções, depoimentos e contato por WhatsApp.</p>
+            <ul class="tags"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
+            <p class="links"><a href="https://github.com/joaodantas-eng/jr-film-site" target="_blank" rel="noopener">Código no GitHub</a><a href="https://jrfilm.vercel.app/" target="_blank" rel="noopener">Ver site</a></p>
+          </article>
+        </li>
+        <li class="marco atual">
+          <p class="marco-data">Setembro de 2026</p>
+          <article class="cartao">
+            <img src="/img/projetos/nodus.webp" width="1000" height="563" alt="Tela inicial do Nodus, com menu lateral e plano do dia">
+            <h3>Nodus</h3>
+            <p>Dashboard pessoal de produtividade, com tarefas, agenda, finanças, hábitos, treinos, estudos, notas, leitura e diário. É o projeto em que estou trabalhando atualmente.</p>
+            <p class="links"><span class="selo selo-laranja">Em andamento</span><a href="https://demonodus.ai.studio/" target="_blank" rel="noopener">Ver demo</a></p>
+          </article>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>© 2026 João Pedro Silva Dantas</p>
+      <ul>
+        <li><a href="https://github.com/joaodantas-eng" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-silva-dantas-0144103b9/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
