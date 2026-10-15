@@ -192,6 +192,12 @@ O site é uma **página única estática**, construída com Vite:
 
 **Paleta:** fundo branco, azul (`#0f2d6b` → `#3b82f6`) como cor secundária e laranja (`#ea580c` → `#fbbf24`) nos detalhes, sempre em gradientes: aba ativa no menu, linha do tempo, títulos e projeto em andamento.
 
+As cores foram inspiradas no meu teclado: o azul e o laranja das teclas viraram a identidade visual do portfólio. ⌨️
+
+<div align="center">
+  <img src="https://drunkdeer.com/cdn/shop/files/70a6edbedc32f463e0f08d339c22c69b_db354a53-51aa-4263-87fa-d82414c20247.jpg?v=1765527447&width=1200" alt="Teclado que inspirou as cores do portfólio" width="500px">
+</div>
+
 ---
 
 ## 🎨 Protótipos (Wireframes)
