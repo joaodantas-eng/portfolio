@@ -1,4 +1,3 @@
-
 # 🏷️ Portfólio Profissional - João Pedro Silva Dantas 👨‍💻
 
 > [!NOTE]
@@ -63,7 +62,8 @@
   > 💻 **Descrição:** Site publicado gratuitamente na nuvem (Vercel).
 * 🎨 **Protótipos:** [Wireframes em PDF](docs/wireframe.pdf)
   > 🖌️ **Descrição:** Wireframes de média fidelidade das quatro páginas, feitos no Figma.
-* 💻 **Código:** [Repositório no GitHub](<URL_DO_SEU_REPOSITÓRIO>)
+* 💻 **Código:** [Repositório no GitHub](<https://github.com/joaodantas-eng/portfolio.git>)
+
 
 ---
 
@@ -221,7 +221,7 @@ cp .env.example .env.local
 1.  **Clone o repositório:**
 
 ```bash
-git clone <URL_DO_SEU_REPOSITÓRIO>
+git clone <https://github.com/joaodantas-eng/portfolio.git>
 cd <pasta-do-projeto>
 ```
 
