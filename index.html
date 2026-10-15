@@ -6,6 +6,20 @@
   <title>Sobre mim | João Pedro Silva Dantas</title>
   <meta name="description" content="Portfólio profissional de João Pedro Silva Dantas, estudante de Engenharia de Software na PUC Minas.">
   <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+  <link rel="canonical" href="https://joaodantasportfolio.vercel.app/">
+  <meta name="theme-color" content="#0f2d6b">
+
+  <!-- prévia do link quando ele é compartilhado (WhatsApp, LinkedIn, Discord...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joaodantasportfolio.vercel.app/">
+  <meta property="og:title" content="João Pedro Silva Dantas | Portfólio">
+  <meta property="og:description" content="Estudante de Engenharia de Software na PUC Minas. Projetos, experiências e contato.">
+  <meta property="og:image" content="https://joaodantasportfolio.vercel.app/img/compartilhar.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
   <!-- aplica o tema salvo e abre a aba do endereço antes da página aparecer (pra não piscar) -->
   <script>
     (function () {
@@ -38,7 +52,7 @@
             <path class="tema-anel" d="M120 3.75C55.5 3.75 3.75 55.5 3.75 120C3.75 184.5 55.5 236.25 120 236.25C184.5 236.25 236.25 184.5 236.25 120C236.25 55.5 184.5 3.75 120 3.75ZM120 214.5V172.5C90.75 172.5 67.5 149.25 67.5 120C67.5 90.75 90.75 67.5 120 67.5V25.5C172.5 25.5 214.5 67.5 214.5 120C214.5 172.5 172.5 214.5 120 214.5Z" fill="black"/>
           </svg>
         </button>
-        <button id="botao-idioma" class="botao-idioma" type="button" aria-label="Mudar para inglês" title="Mudar para inglês">EN</button>
+        <button id="botao-idioma" class="botao-idioma" type="button" aria-label="EN: mudar para inglês" title="EN: mudar para inglês">EN</button>
       </div>
 
       <div class="perfil">
@@ -79,6 +93,7 @@
           <p data-i18n="sobre-p3">Busco crescer na área de tecnologia por meio de projetos, estudos e experiências que me desafiem a evoluir constantemente.</p>
         </div>
 
+        <div class="coluna-fatos">
         <dl class="fatos">
           <div>
             <dt data-i18n="fato-formacao">Formação</dt>
@@ -97,11 +112,12 @@
             <dt data-i18n="fato-curto">Também curto</dt>
             <dd data-i18n="fato-curto-valor">Design, jiu-jitsu e o Galo</dd>
           </div>
-          <a class="botao-curriculo" href="/curriculo/Curriculo_Joao_Pedro_Silva_Dantas.pdf" download>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
-            <span data-i18n="curriculo">Baixar meu currículo (PDF)</span>
-          </a>
         </dl>
+        <a class="botao-curriculo" href="/curriculo/Curriculo_Joao_Pedro_Silva_Dantas.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+          <span data-i18n="curriculo">Baixar meu currículo (PDF)</span>
+        </a>
+        </div>
       </div>
 
       <h3 class="titulo-secao"><span data-i18n="tecnologias-titulo">Tecnologias que uso:</span> <span class="giz giz-nota" aria-hidden="true" data-i18n="tecnologias-nota">e contando!</span></h3>
@@ -140,11 +156,11 @@
       <h2 class="so-leitor-de-tela" id="titulo-contato" data-i18n="aba-contato">Contato</h2>
       <h3 class="titulo-secao"><span data-i18n="contato-titulo">Contato rápido:</span> <span class="giz giz-nota" aria-hidden="true" data-i18n="contato-nota">manda um oi!</span></h3>
       <ul class="icones">
-        <li><a href="https://github.com/joaodantas-eng" target="_blank" rel="noopener" title="GitHub"><img src="/img/contato/github.svg" width="40" height="40" alt="GitHub"></a></li>
-        <li><a href="mailto:joaopedrosilvadantas3@gmail.com" title="E-mail"><img src="/img/contato/gmail.svg" width="40" height="40" alt="E-mail"></a></li>
-        <li><a href="https://wa.me/5537991705517" target="_blank" rel="noopener" title="WhatsApp"><img src="/img/contato/whatsapp.svg" width="40" height="40" alt="WhatsApp"></a></li>
-        <li><a href="https://www.linkedin.com/in/joaopedrosdantas/" target="_blank" rel="noopener" title="LinkedIn"><img src="/img/contato/linkedin.svg" width="40" height="40" alt="LinkedIn"></a></li>
-        <li><a href="https://www.instagram.com/joaopedrosilvadantas/" target="_blank" rel="noopener" title="Instagram"><img src="/img/contato/instagram.svg" width="40" height="40" alt="Instagram"></a></li>
+        <li><a href="https://github.com/joaodantas-eng" target="_blank" rel="noopener" title="GitHub"><img src="/img/contato/github.svg" width="40" height="40" alt="GitHub" loading="lazy"></a></li>
+        <li><a href="mailto:joaopedrosilvadantas3@gmail.com" title="E-mail"><img src="/img/contato/gmail.svg" width="40" height="40" alt="E-mail" loading="lazy"></a></li>
+        <li><a href="https://wa.me/5537991705517" target="_blank" rel="noopener" title="WhatsApp"><img src="/img/contato/whatsapp.svg" width="40" height="40" alt="WhatsApp" loading="lazy"></a></li>
+        <li><a href="https://www.linkedin.com/in/joaopedrosdantas/" target="_blank" rel="noopener" title="LinkedIn"><img src="/img/contato/linkedin.svg" width="40" height="40" alt="LinkedIn" loading="lazy"></a></li>
+        <li><a href="https://www.instagram.com/joaopedrosilvadantas/" target="_blank" rel="noopener" title="Instagram"><img src="/img/contato/instagram.svg" width="40" height="40" alt="Instagram" loading="lazy"></a></li>
       </ul>
 
       <h3 class="titulo-secao"><span data-i18n="form-titulo">Formulário</span></h3>
@@ -163,6 +179,11 @@
           <textarea id="mensagem" name="mensagem" rows="6" aria-describedby="erro-mensagem"></textarea>
           <p class="erro-campo" id="erro-mensagem" aria-live="polite"></p>
         </div>
+        <!-- anti-spam: as pessoas não veem esse campo, mas robôs costumam preencher -->
+        <div class="campo-robo" aria-hidden="true">
+          <label for="site">Não preencha este campo</label>
+          <input id="site" name="site" type="text" tabindex="-1" autocomplete="off">
+        </div>
         <div class="envio">
           <button class="botao" id="botao-enviar" type="submit" data-i18n="form-enviar">Enviar mensagem</button>
           <p class="form-status" id="form-status" role="status"></p>
@@ -177,7 +198,7 @@
     <form method="dialog">
       <button class="visualizador-fechar" type="submit" aria-label="Fechar imagem" data-i18n-aria="fechar-imagem">✕</button>
     </form>
-    <img id="visualizador-img" src="" alt="">
+    <img id="visualizador-img" alt="">
     <p class="visualizador-legenda" id="visualizador-legenda"></p>
   </dialog>
 

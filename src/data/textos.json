@@ -4,19 +4,16 @@
     "aba-projetos": "Projetos",
     "aba-experiencias": "Experiências",
     "aba-contato": "Contato",
-
     "idioma-botao": "EN",
-    "idioma-trocar": "Mudar para inglês",
+    "idioma-trocar": "EN: mudar para inglês",
     "tema-ativar-escuro": "Ativar tema escuro",
     "tema-ativar-claro": "Ativar tema claro",
     "tema-escuro": "Tema escuro",
     "tema-claro": "Tema claro",
-
     "saudacao": "oi, eu sou o",
     "legenda-foto": "eng. de software @ PUC Minas",
     "foto-alt": "Foto de João Pedro Silva Dantas",
     "resumo": "Estudante do 2º período de Engenharia de Software na PUC Minas, com interesse em desenvolvimento backend e olhar de designer.",
-
     "sobre-p1": "Sou estudante de Engenharia de Software na PUC Minas: comecei o curso em 2026 e hoje estou no 2º período. Gosto de transformar ideias em soluções simples, funcionais e fáceis de usar. Tenho afinidade especial com desenvolvimento backend, mas ainda estou descobrindo qual área da tecnologia combina mais comigo.",
     "sobre-p2": "Aprendo melhor na prática, criando projetos e explorando novas tecnologias pelo caminho. Também tenho experiência com design, criando identidades visuais, logos e materiais digitais, e levo esse olhar para os meus projetos. Fora da tela, pratico jiu-jitsu e acompanho o Atlético Mineiro.",
     "sobre-p3": "Busco crescer na área de tecnologia por meio de projetos, estudos e experiências que me desafiem a evoluir constantemente.",
@@ -32,19 +29,16 @@
     "curriculo": "Baixar meu currículo (PDF)",
     "tecnologias-titulo": "Tecnologias que uso:",
     "tecnologias-nota": "e contando!",
-
     "projetos-titulo": "Linha do tempo de projetos",
     "projeto-codigo": "Código no GitHub",
     "projeto-site": "Ver site",
     "projeto-demo": "Ver demo",
     "projeto-privado": "Repositório privado",
     "projeto-atual": "fazendo agora!",
-    "projeto-ampliar": "Ampliar",
-    "projeto-ampliar-aria": "Ampliar imagem:",
+    "projeto-ampliar": "Ver em ação",
+    "projeto-ampliar-aria": "Ver o projeto em funcionamento:",
     "fechar-imagem": "Fechar imagem",
-
     "conector-e": "e",
-
     "contato-titulo": "Contato rápido:",
     "contato-nota": "manda um oi!",
     "form-titulo": "Formulário",
@@ -59,7 +53,6 @@
     "status-ok": "Mensagem enviada! Valeu pelo contato, respondo em breve.",
     "status-erro": "Não deu pra enviar agora. Tenta de novo ou me chama pelo e-mail ou WhatsApp aí em cima.",
     "status-config": "O formulário ainda não está configurado. Me chama pelo e-mail ou WhatsApp aí em cima.",
-
     "credito": "Animações adaptadas de Skiper UI e Bencho"
   },
   "en": {
@@ -67,19 +60,16 @@
     "aba-projetos": "Projects",
     "aba-experiencias": "Experience",
     "aba-contato": "Contact",
-
     "idioma-botao": "PT",
-    "idioma-trocar": "Switch to Portuguese",
+    "idioma-trocar": "PT: switch to Portuguese",
     "tema-ativar-escuro": "Switch to dark theme",
     "tema-ativar-claro": "Switch to light theme",
     "tema-escuro": "Dark theme",
     "tema-claro": "Light theme",
-
     "saudacao": "hi, i'm",
     "legenda-foto": "software eng. @ PUC Minas",
     "foto-alt": "Photo of João Pedro Silva Dantas",
     "resumo": "Second-semester Software Engineering student at PUC Minas, interested in backend development, with a designer's eye.",
-
     "sobre-p1": "I'm a Software Engineering student at PUC Minas: I started in 2026 and I'm now in my second semester. I like turning ideas into solutions that are simple, functional and easy to use. I have a special interest in backend development, but I'm still finding out which area of tech suits me best.",
     "sobre-p2": "I learn best by doing, building projects and exploring new technologies along the way. I also have experience in design, creating visual identities, logos and digital materials, and I bring that eye to my projects. Away from the screen, I train jiu-jitsu and follow Atlético Mineiro.",
     "sobre-p3": "I want to grow in tech through projects, studies and experiences that keep challenging me to improve.",
@@ -95,19 +85,16 @@
     "curriculo": "Download my résumé (PDF, in Portuguese)",
     "tecnologias-titulo": "Technologies I use:",
     "tecnologias-nota": "and counting!",
-
     "projetos-titulo": "Project timeline",
     "projeto-codigo": "Code on GitHub",
     "projeto-site": "Live site",
     "projeto-demo": "Live demo",
     "projeto-privado": "Private repository",
     "projeto-atual": "working on it!",
-    "projeto-ampliar": "Zoom",
-    "projeto-ampliar-aria": "Zoom image:",
+    "projeto-ampliar": "See it in action",
+    "projeto-ampliar-aria": "See the project in action:",
     "fechar-imagem": "Close image",
-
     "conector-e": "and",
-
     "contato-titulo": "Quick contact:",
     "contato-nota": "say hi!",
     "form-titulo": "Contact form",
@@ -122,7 +109,6 @@
     "status-ok": "Message sent! Thanks for reaching out, I'll get back to you soon.",
     "status-erro": "Couldn't send it right now. Try again or reach me by email or WhatsApp above.",
     "status-config": "The form isn't set up yet. Reach me by email or WhatsApp above.",
-
     "credito": "Animations adapted from Skiper UI and Bencho"
   }
 }

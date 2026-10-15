@@ -22,6 +22,7 @@
   --laranja-claro: #fdba74;
   --ambar: #fbbf24;
   --texto-no-laranja: #2a1405;
+  --laranja-texto: #c2410c; /* laranja pra texto em cima do branco (contraste melhor) */
 
   /* gradientes */
   --grad-azul: linear-gradient(135deg, #0f2d6b 0%, #1d4ed8 55%, #3b82f6 100%);
@@ -68,6 +69,7 @@
   --titulo: #ffffff;
   --borda: #22304d;
   --link: #93c5fd;
+  --laranja-texto: #fb923c;
   --grad-nome: linear-gradient(120deg, #ffffff 0%, #bfdbfe 100%);
   --grad-sobrenome: linear-gradient(120deg, #60a5fa 0%, #38bdf8 100%);
   --brilho-azul: rgba(59, 130, 246, 0.2);
@@ -145,7 +147,7 @@ ol {
 .giz-nota {
   display: inline-block;
   margin-left: 12px;
-  color: var(--laranja);
+  color: var(--laranja-texto);
   font-size: 0.95em;
 }
 
@@ -286,7 +288,7 @@ ol {
 
 .saudacao {
   margin: 0 0 6px;
-  color: var(--laranja);
+  color: var(--laranja-texto);
   font-size: 1.9rem;
 }
 
@@ -583,9 +585,9 @@ button.tlt:focus-visible {
 }
 
 .selo-ampliar svg {
-  width: 14px;
-  height: 14px;
-  fill: none;
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
   stroke: currentColor;
   stroke-width: 2;
   stroke-linecap: round;
@@ -630,11 +632,21 @@ button.tlt:focus-visible .selo-ampliar {
 
 .visualizador img {
   display: block;
+  min-height: 200px; /* segura o espaço enquanto o GIF carrega */
   max-width: 100%;
   max-height: calc(92vh - 110px);
   margin: 0 auto;
   border-radius: 10px;
   object-fit: contain;
+}
+
+.visualizador img.carregando {
+  opacity: 0.3;
+}
+
+/* a janela tem largura fixa pra não ficar mudando de tamanho entre um GIF e outro */
+.visualizador {
+  width: min(92vw, 1000px);
 }
 
 .visualizador-legenda {
@@ -762,6 +774,11 @@ html:not([data-aba]) .aba {
   margin-bottom: 52px;
 }
 
+.coluna-fatos {
+  display: grid;
+  gap: 14px;
+}
+
 .fatos {
   display: grid;
   gap: 14px;
@@ -881,6 +898,11 @@ html:not([data-aba]) .aba {
 /* logo do GitHub fica branco no tema escuro */
 [data-theme="dark"] img[src$="github.svg"] {
   filter: invert(1);
+}
+
+/* o azul do logo do Java some no fundo escuro */
+[data-theme="dark"] img[src$="java.svg"] {
+  filter: brightness(1.6) saturate(1.2);
 }
 
 /* ---------- projetos: linha do tempo ---------- */
@@ -1134,6 +1156,15 @@ html:not([data-aba]) .aba {
   resize: vertical;
 }
 
+/* campo anti-spam: fica fora da tela */
+.campo-robo {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* campo com erro */
 .formulario .invalido {
   border-color: #dc2626;
@@ -1381,7 +1412,8 @@ html:not([data-aba]) .aba {
     margin-bottom: 32px;
   }
 
-  .fatos {
+  .fatos,
+  .coluna-fatos {
     gap: 10px;
   }
 

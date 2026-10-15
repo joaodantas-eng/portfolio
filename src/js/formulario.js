@@ -57,6 +57,14 @@ formulario.addEventListener("submit", async function (evento) {
     return;
   }
 
+  // anti-spam: se o campo escondido veio preenchido, foi um robô.
+  // finjo que deu certo e não envio nada
+  if (document.getElementById("site").value) {
+    mostrarStatus("status-ok", "ok");
+    formulario.reset();
+    return;
+  }
+
   if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
     console.warn("Faltam as chaves do EmailJS no .env.local");
     mostrarStatus("status-config", "falha");

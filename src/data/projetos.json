@@ -13,9 +13,23 @@
       "pt": "Projeto acadêmico em grupo para registrar e acompanhar focos de incêndio em um mapa, com perfis para bombeiros e brigadistas. Fui o líder do grupo e fiz a análise de focos no perfil do bombeiro.",
       "en": "Academic group project to record and track wildfire spots on a map, with separate profiles for firefighters and volunteer brigades. I led the group and built the fire analysis feature in the firefighter profile."
     },
-    "tecnologias": ["HTML", "CSS", "JavaScript", "Bootstrap", "JSON Server", "Leaflet"],
-    "links": { "privado": true },
-    "atual": false
+    "tecnologias": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "JSON Server",
+      "Leaflet"
+    ],
+    "links": {
+      "privado": true
+    },
+    "atual": false,
+    "gif": "/img/projetos/gif/firefighter-radar.gif",
+    "altGif": {
+      "pt": "Gravação do Firefighter Radar: página inicial, linha do tempo e mapa de focos",
+      "en": "Firefighter Radar recording: home page, timeline and wildfire map"
+    }
   },
   {
     "id": "drecut",
@@ -31,9 +45,20 @@
       "pt": "Jogo de investigação feito em grupo no projeto final de Introdução a Algoritmos. O jogador explora o mapa, conversa com NPCs e resolve desafios. Fiquei com a movimentação do jogador e as telas de menu.",
       "en": "Detective game built as a group for the final project of Introduction to Algorithms. Players explore the map, talk to NPCs and solve challenges. I was in charge of player movement and the menu screens."
     },
-    "tecnologias": ["Python", "Pygame", "Pytest"],
-    "links": { "github": "https://github.com/5byp8r/TrabalhoFinalIntroAlgs" },
-    "atual": false
+    "tecnologias": [
+      "Python",
+      "Pygame",
+      "Pytest"
+    ],
+    "links": {
+      "github": "https://github.com/5byp8r/TrabalhoFinalIntroAlgs"
+    },
+    "atual": false,
+    "gif": "/img/projetos/gif/drecut.gif",
+    "altGif": {
+      "pt": "Gravação do Drecut: menu, movimentação do jogador, diálogo e enigma",
+      "en": "Drecut recording: menu, player movement, dialogue and puzzle"
+    }
   },
   {
     "id": "jr-film",
@@ -49,12 +74,22 @@
       "pt": "Site de uma oficina mecânica real de Nova Serrana (MG), feito fora da faculdade para atender o negócio: serviços, promoções, depoimentos e contato por WhatsApp. Usei IA como apoio na implementação.",
       "en": "Website for a real auto repair shop in Nova Serrana (Brazil), built outside college for an actual business: services, promotions, reviews and WhatsApp contact. I used AI as support during implementation."
     },
-    "tecnologias": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "tecnologias": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
     "links": {
       "github": "https://github.com/joaodantas-eng/jr-film-site",
       "site": "https://jrfilm.vercel.app/"
     },
-    "atual": false
+    "atual": false,
+    "gif": "/img/projetos/gif/jr-film.gif",
+    "altGif": {
+      "pt": "Gravação do site da JR Film rolando pelas seções",
+      "en": "JR Film website recording scrolling through the sections"
+    }
   },
   {
     "id": "nodus",
@@ -71,7 +106,14 @@
       "en": "Personal productivity dashboard with tasks, calendar, finances, habits, workouts, studies, notes, reading and a journal. It's the project I'm currently working on."
     },
     "tecnologias": [],
-    "links": { "demo": "https://demonodus.ai.studio/" },
-    "atual": true
+    "links": {
+      "demo": "https://demonodus.ai.studio/"
+    },
+    "atual": true,
+    "gif": "/img/projetos/gif/nodus.gif",
+    "altGif": {
+      "pt": "Gravação do tour de demonstração do Nodus",
+      "en": "Recording of the Nodus demo tour"
+    }
   }
 ]

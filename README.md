@@ -1,3 +1,4 @@
+
 # 🏷️ Portfólio Profissional - João Pedro Silva Dantas 👨‍💻
 
 > [!NOTE]
@@ -22,7 +23,8 @@
 
 ## 🚧 Status do Projeto
 
-![Sprint](https://img.shields.io/badge/Sprint-2%20de%203-f97316?style=for-the-badge)
+[![Site no ar](https://img.shields.io/badge/Site-no%20ar-16a34a?style=for-the-badge&logo=vercel&logoColor=white)](https://joaodantasportfolio.vercel.app/)
+![Sprint](https://img.shields.io/badge/Sprint-3%20de%203-f97316?style=for-the-badge)
 ![Vite](https://img.shields.io/badge/Vite-8.x-007ec6?style=for-the-badge&logo=vite&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-007ec6?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-007ec6?style=for-the-badge&logo=css3&logoColor=white)
@@ -32,7 +34,7 @@
 | :--- | :--- | :---: |
 | **Lab01S01** | Planejamento, wireframes, protótipo inicial, navegação e layout base | ✅ Entregue |
 | **Lab01S02** | Funcionalidades principais (idioma PT/EN, timeline dinâmica, formulário, validações) | ✅ Entregue |
-| **Lab01S03** | Hospedagem na nuvem, ajustes finais e README final | ⏳ A fazer |
+| **Lab01S03** | Hospedagem na nuvem, ajustes finais e README final | ✅ Entregue |
 
 ---
 
@@ -40,6 +42,7 @@
 - [Links Úteis](#-links-úteis)
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Funcionalidades Principais](#-funcionalidades-principais)
+- [Instruções de Uso](#-instruções-de-uso)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Arquitetura](#-arquitetura)
 - [Protótipos (Wireframes)](#-protótipos-wireframes)
@@ -58,12 +61,11 @@
 ---
 
 ## 🔗 Links Úteis
-* 🌐 **Demo Online:** _link será adicionado após o deploy (Sprint 3)_
+* 🌐 **Demo Online:** [joaodantasportfolio.vercel.app](https://joaodantasportfolio.vercel.app/)
   > 💻 **Descrição:** Site publicado gratuitamente na nuvem (Vercel).
 * 🎨 **Protótipos:** [Wireframes em PDF](docs/wireframe.pdf)
-  > 🖌️ **Descrição:** Wireframes de média fidelidade das quatro páginas, feitos no Figma.
-* 💻 **Código:** [Repositório no GitHub](<https://github.com/joaodantas-eng/portfolio.git>)
-
+  > 🖌️ **Descrição:** Wireframes de média fidelidade das quatro telas, feitos no Figma.
+* 💻 **Código:** [Repositório no GitHub](https://github.com/joaodantas-eng/portfolio)
 
 ---
 
@@ -90,7 +92,7 @@
 - 🔗 **Links animados:** um fundo azul entra da esquerda e o link fica branco, com uma seta deslizando.
 - 🃏 **Cards que "afundam":** as imagens dos cards inclinam e afundam sob o cursor, com sombra e brilho que acompanham o ponteiro.
 - 👤 **Sobre mim:** apresentação, formação (Engenharia de Software na PUC Minas, início em 2026, 2º período, conclusão prevista em 2029), idiomas, as tecnologias que uso e um botão para **baixar o currículo em PDF**.
-- 🕒 **Linha do tempo de projetos:** do mais antigo ao mais recente, com imagem, descrição, tecnologias e links (código, site ou demo). Clicar no print abre a **imagem ampliada**.
+- 🕒 **Linha do tempo de projetos:** do mais antigo ao mais recente, com imagem, descrição, tecnologias e links (código, site ou demo). Clicar no print abre um **GIF do projeto em funcionamento**.
 - 💼 **Experiências:** graduação, evento técnico (We Make Software), experiências profissionais, trabalhos como designer e sites que desenvolvi.
 - 📨 **Contato:** ícones clicáveis (GitHub, e-mail, WhatsApp, LinkedIn e Instagram) e formulário.
 - ✏️ **Detalhes "escritos a giz":** a fonte Chalk aparece em pequenas anotações (saudação, datas da linha do tempo e notas ao lado dos títulos).
@@ -102,6 +104,29 @@
 - 🕒 **Timeline dinâmica:** os projetos ficam em `src/data/projetos.json`. O JavaScript ordena por data e monta os cards; para adicionar um projeto, basta incluir um item no arquivo. As experiências seguem a mesma ideia (`src/data/experiencias.json`).
 - ✉️ **Formulário funcional:** a mensagem chega no meu e-mail pelo **EmailJS**.
 - ✅ **Validações:** nome com pelo menos 2 letras, e-mail em formato válido e mensagem com pelo menos 10 caracteres. Os erros aparecem embaixo de cada campo, no idioma escolhido, e somem conforme a pessoa corrige.
+
+**Ajustes da Sprint 3:**
+
+- 🔗 **Prévia do link:** ao compartilhar o site no WhatsApp, LinkedIn ou Discord, aparece um card com título, descrição e imagem (tags Open Graph).
+- ♿ **Acessibilidade revisada:** auditoria com o [axe-core](https://github.com/dequelabs/axe-core) (a mesma base do Lighthouse) nas quatro abas, nos dois temas e nos dois idiomas, sem nenhum problema restante. Foram corrigidos contraste, a estrutura da lista de informações e o nome do botão de idioma.
+- 🤖 **Anti-spam no formulário:** um campo escondido, que só robôs preenchem, bloqueia o envio automático sem precisar de captcha.
+- ⚡ **Carregamento mais leve:** os ícones e imagens das abas fechadas só carregam quando a aba é aberta.
+- 🎞️ **Projetos em funcionamento:** cada projeto tem um GIF de cerca de 6 segundos, gravado da tela e acelerado. Os cards mostram o print parado, e o GIF (1 a 2 MB) só é baixado quando a pessoa clica. Quem desativou animações no sistema vê o print em vez do GIF.
+
+---
+
+## 📖 Instruções de Uso
+
+1. Acesse **[joaodantasportfolio.vercel.app](https://joaodantasportfolio.vercel.app/)**.
+2. Use o **menu azul** para trocar entre *Sobre mim*, *Projetos*, *Experiências* e *Contato*. A página não recarrega, e o botão "voltar" do navegador funciona. Dá para mandar o link direto de uma aba, como [`/#projetos`](https://joaodantasportfolio.vercel.app/#projetos).
+3. No canto superior direito:
+   * **◐** troca entre tema claro e escuro;
+   * **EN / PT** troca o idioma do site.
+
+   As duas escolhas ficam salvas para a próxima visita.
+4. Em **Sobre mim**, o botão laranja baixa o **currículo em PDF**.
+5. Em **Projetos**, passe o mouse sobre um print para ver o efeito de inclinação e **clique nele para ver o projeto em ação** (um GIF curto). Ele fecha no ✕, no Esc ou clicando fora.
+6. Em **Contato**, clique num ícone para falar direto por GitHub, e-mail, WhatsApp, LinkedIn ou Instagram, ou preencha o **formulário**. A mensagem chega direto no meu e-mail.
 
 ---
 
@@ -137,7 +162,7 @@
 ### ⚙️ Infraestrutura & DevOps
 
 * **Versionamento:** Git e GitHub
-* **Hospedagem:** Vercel (Sprint 3)
+* **Hospedagem:** [Vercel](https://joaodantasportfolio.vercel.app/)
 
 ---
 
@@ -212,7 +237,7 @@ cp .env.example .env.local
 > [!NOTE]
 > As variáveis começam com `VITE_` porque o Vite só deixa o código do navegador ler variáveis com esse prefixo. A chave do EmailJS é pública (feita para ficar no front-end); para mais segurança, no painel do EmailJS dá para permitir envios apenas a partir do domínio do site.
 
-**Na Vercel (Sprint 3):** cadastre as mesmas três variáveis em *Project Settings → Environment Variables* antes do deploy.
+**Na Vercel:** as mesmas três variáveis estão cadastradas em *Project Settings → Environment Variables*. Se mudar alguma, faça um *Redeploy*, porque o Vite coloca os valores no site na hora do build.
 
 ---
 
@@ -221,8 +246,8 @@ cp .env.example .env.local
 1.  **Clone o repositório:**
 
 ```bash
-git clone <https://github.com/joaodantas-eng/portfolio.git>
-cd <pasta-do-projeto>
+git clone https://github.com/joaodantas-eng/portfolio.git
+cd portfolio
 ```
 
 2.  **Instale as dependências:**
@@ -259,7 +284,9 @@ npm run preview
 
 ## 🚀 Deploy
 
-O deploy será feito na **Vercel** na Sprint 3:
+O site está publicado na **Vercel**: **[joaodantasportfolio.vercel.app](https://joaodantasportfolio.vercel.app/)**
+
+A cada `git push` na branch `main`, a Vercel faz um novo deploy sozinha. Para publicar uma cópia do projeto:
 
 1.  Entre em [vercel.com](https://vercel.com/) com a conta do GitHub.
 2.  Clique em **Add New → Project** e escolha este repositório.
@@ -311,8 +338,9 @@ O deploy será feito na **Vercel** na Sprint 3:
 │   ├── /curriculo               # 📄 Currículo em PDF (botão "Baixar meu currículo").
 │   └── /img
 │       ├── logo.svg             # 🏷️ Logo do projeto e favicon.
+│       ├── compartilhar.jpg     # 🔗 Imagem da prévia do link.
 │       ├── foto.webp            # 👤 Foto de perfil.
-│       ├── /projetos            # 🕒 Prints dos projetos (e /grande, para a imagem ampliada).
+│       ├── /projetos            # 🕒 Prints dos projetos (/grande: tamanho original; /gif: projetos em funcionamento).
 │       ├── /tech                # 🧰 Logos das tecnologias.
 │       └── /contato             # 📨 Ícones de contato.
 │
@@ -336,6 +364,14 @@ Capturas do protótipo funcionando.
 | <img src="docs/prints/desktop-sobre-mim.png" alt="Página Sobre mim no desktop" width="400px"> | <img src="docs/prints/desktop-projetos.png" alt="Página Projetos no desktop" width="400px"> |
 | **Experiências** | **Contato** |
 | <img src="docs/prints/desktop-experiencias.png" alt="Página Experiências no desktop" width="400px"> | <img src="docs/prints/desktop-contato.png" alt="Página Contato no desktop" width="400px"> |
+
+### 🎞️ Projetos em funcionamento
+
+| Firefighter Radar | Drecut: Fragmentos da Verdade |
+| :---: | :---: |
+| <img src="public/img/projetos/gif/firefighter-radar.gif" alt="Firefighter Radar em funcionamento" width="400px"> | <img src="public/img/projetos/gif/drecut.gif" alt="Drecut em funcionamento" width="400px"> |
+| **JR Film: Site Institucional** | **Nodus** |
+| <img src="public/img/projetos/gif/jr-film.gif" alt="Site da JR Film em funcionamento" width="400px"> | <img src="public/img/projetos/gif/nodus.gif" alt="Nodus em funcionamento" width="400px"> |
 
 ### 🌐 Em inglês
 

@@ -1,6 +1,8 @@
 // Linha do tempo de projetos
 // Os projetos ficam em src/data/projetos.json. Aqui eu ordeno por data
 // (do mais antigo pro mais recente) e monto os cards.
+// O card mostra o print parado (carrega rápido) e, ao clicar, abre o GIF
+// do projeto funcionando.
 // Pra adicionar um projeto novo é só colocar mais um item no JSON.
 
 import projetos from "../data/projetos.json";
@@ -43,13 +45,15 @@ function criarCartao(projeto) {
       <p class="marco-data giz">${formatarData(projeto.data)}</p>
       <article class="cartao">
         <button class="tlt tlt-projeto" type="button"
-          data-ampliar="${projeto.imagemGrande}" data-legenda="${projeto.nome}" data-alt="${alt}"
-          aria-label="${t("projeto-ampliar-aria")} ${alt}">
+          data-ampliar="${projeto.gif}" data-alt="${projeto.altGif[idioma]}"
+          data-estatica="${projeto.imagemGrande}" data-alt-estatica="${alt}"
+          data-legenda="${projeto.nome}"
+          aria-label="${t("projeto-ampliar-aria")} ${projeto.nome}">
           <span class="tlt-card" style="background-image: url('${projeto.imagem}')">
             <span class="tlt-sheen" aria-hidden="true"></span>
           </span>
           <span class="selo-ampliar" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></svg>
             ${t("projeto-ampliar")}
           </span>
         </button>
