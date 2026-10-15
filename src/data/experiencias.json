@@ -1,0 +1,83 @@
+[
+  {
+    "sigla": "PUC",
+    "cargo": { "pt": "Estudante de Engenharia de Software", "en": "Software Engineering student" },
+    "lugar": { "pt": "PUC Minas · Graduação", "en": "PUC Minas · Bachelor's degree" },
+    "detalhe": {
+      "pt": "2026 até hoje · 2º período · conclusão prevista em 2029",
+      "en": "2026 to present · 2nd semester · expected to graduate in 2029"
+    },
+    "descricao": {
+      "pt": "Graduação em andamento, com projetos em desenvolvimento web, Python e algoritmos. Trabalho em equipe com GitHub, quadro de tarefas e entregas por sprint.",
+      "en": "Ongoing degree with projects in web development, Python and algorithms. Teamwork using GitHub, task boards and sprint deliveries."
+    }
+  },
+  {
+    "sigla": "WMS",
+    "cargo": { "pt": "We Make Software", "en": "We Make Software" },
+    "lugar": { "pt": "Evento técnico · Participante", "en": "Tech event · Attendee" },
+    "detalhe": {
+      "pt": "1º semestre de 2026 · Belo Horizonte",
+      "en": "First half of 2026 · Belo Horizonte"
+    },
+    "descricao": {
+      "pt": "Participei das edições COREU e Lourdes do evento, com 4 horas em cada.",
+      "en": "Attended the COREU and Lourdes editions of the event, 4 hours each."
+    }
+  },
+  {
+    "sigla": "JR",
+    "cargo": { "pt": "Auxiliar Administrativo", "en": "Administrative Assistant" },
+    "lugar": { "pt": "JRFilms · Meio período", "en": "JRFilms · Part-time" },
+    "detalhe": {
+      "pt": "Fev. 2025 a fev. 2026 · 1 ano e 1 mês · Nova Serrana (MG), presencial",
+      "en": "Feb 2025 to Feb 2026 · 1 yr 1 mo · Nova Serrana, Brazil, on-site"
+    },
+    "descricao": {
+      "pt": "Atuação como caixa e no atendimento ao cliente. Responsável também pela gestão das redes sociais da empresa e pelo contato com clientes por WhatsApp e telefone, atendendo diversas franquias de seguros e outras empresas.",
+      "en": "Worked as a cashier and in customer service. Also managed the company's social media and handled customer contact by WhatsApp and phone, serving several insurance franchises and other companies."
+    }
+  },
+  {
+    "sigla": "CR",
+    "cargo": { "pt": "Aprendiz de Auxiliar Administrativo", "en": "Administrative Apprentice" },
+    "lugar": {
+      "pt": "Cromic Indústria e Comércio de Calçados · Meio período",
+      "en": "Cromic Indústria e Comércio de Calçados · Part-time"
+    },
+    "detalhe": {
+      "pt": "Mai. 2024 a dez. 2024 · 8 meses · Nova Serrana (MG), presencial",
+      "en": "May 2024 to Dec 2024 · 8 mos · Nova Serrana, Brazil, on-site"
+    },
+    "descricao": {
+      "pt": "Experiência como jovem aprendiz no setor de Recursos Humanos.",
+      "en": "Young apprentice in the Human Resources department."
+    }
+  },
+  {
+    "sigla": "DS",
+    "cargo": { "pt": "Designer freelancer", "en": "Freelance designer" },
+    "lugar": { "pt": "Design e identidade visual", "en": "Design and visual identity" },
+    "detalhe": {
+      "pt": "Curso de design com Rafael Franco",
+      "en": "Design course with Rafael Franco"
+    },
+    "descricao": {
+      "pt": "Trabalhos como designer freelancer, criando logos, identidades visuais e peças digitais.",
+      "en": "Freelance work creating logos, visual identities and digital pieces."
+    }
+  },
+  {
+    "sigla": "WEB",
+    "cargo": { "pt": "Desenvolvimento de sites próprios", "en": "Personal web projects" },
+    "lugar": { "pt": "Projetos pessoais", "en": "Side projects" },
+    "links": [
+      { "texto": { "pt": "Nodus", "en": "Nodus" }, "href": "https://demonodus.ai.studio/" },
+      { "texto": { "pt": "site da JP DROP", "en": "JP DROP website" }, "href": "https://jpdropco.vercel.app/" }
+    ],
+    "descricao": {
+      "pt": "Criação e publicação de sites e aplicações para uso próprio, colocando em prática o que aprendo.",
+      "en": "Building and publishing websites and apps for my own use, putting what I learn into practice."
+    }
+  }
+]

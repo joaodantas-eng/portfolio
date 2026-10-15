@@ -1,13 +1,18 @@
-// Arquivo principal: carregado por todas as páginas.
+// arquivo principal, carregado pelo index.html
 
-// Fontes (instaladas pelo npm, ficam dentro do projeto)
-import "@fontsource/manrope/400.css";
-import "@fontsource/manrope/500.css";
-import "@fontsource/manrope/700.css";
-import "@fontsource/bricolage-grotesque/600.css";
-import "@fontsource/bricolage-grotesque/700.css";
+// fontes (instaladas pelo npm)
+import "@fontsource/unbounded/600.css";
+import "@fontsource/unbounded/700.css";
+import "@fontsource/plus-jakarta-sans/400.css";
+import "@fontsource/plus-jakarta-sans/500.css";
+import "@fontsource/plus-jakarta-sans/700.css";
 
-// Estilos do site
 import "./styles/style.css";
 
-// A partir da Sprint 2, os scripts do site (idioma, tema e formulário) entram aqui.
+import "./js/idioma.js"; // português / inglês (vem primeiro: os outros usam os textos dele)
+import "./js/abas.js"; // troca de abas sem recarregar
+import "./js/tema.js"; // tema claro/escuro
+import "./js/projetos.js"; // monta a linha do tempo a partir do projetos.json
+import "./js/experiencias.js"; // monta as experiências a partir do experiencias.json
+import "./js/formulario.js"; // validação e envio do formulário (EmailJS)
+import "./js/ampliar.js"; // clicar no print do projeto amplia a imagem

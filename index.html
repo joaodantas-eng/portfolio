@@ -4,76 +4,192 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sobre mim | João Pedro Silva Dantas</title>
-  <meta name="description" content="Portfólio profissional de João Pedro Silva Dantas, estudante de Engenharia de Software.">
+  <meta name="description" content="Portfólio profissional de João Pedro Silva Dantas, estudante de Engenharia de Software na PUC Minas.">
   <link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+  <!-- aplica o tema salvo e abre a aba do endereço antes da página aparecer (pra não piscar) -->
+  <script>
+    (function () {
+      var tema = null;
+      try { tema = localStorage.getItem("tema"); } catch (e) {}
+      if (!tema) tema = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = tema;
+
+      var aba = location.hash.replace("#", "");
+      var abas = ["sobre", "projetos", "experiencias", "contato"];
+      document.documentElement.dataset.aba = abas.indexOf(aba) >= 0 ? aba : "sobre";
+    })();
+  </script>
   <script type="module" src="/src/main.js"></script>
 </head>
 <body>
 
-  <!-- CABEÇALHO (igual em todas as páginas) -->
+  <!-- cabeçalho -->
   <header class="cabecalho">
-    <div class="container">
+    <div class="container topo">
 
-      <!-- Botões do canto direito (tema e idioma). Ficam ativos na Sprint 2 -->
+      <!-- botões de tema e idioma -->
       <div class="acoes">
-        <button class="acao" type="button" disabled title="Mudar tema (disponível na Sprint 2)" aria-label="Mudar tema"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
-        <button class="acao" type="button" disabled title="Mudar idioma (disponível na Sprint 2)" aria-label="Mudar idioma">PT</button>
+        <button id="botao-tema" class="botao-tema" type="button" aria-pressed="false" aria-label="Ativar tema escuro" title="Tema escuro">
+          <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="tema-metade">
+              <path d="M120 67.5C149.25 67.5 172.5 90.75 172.5 120C172.5 149.25 149.25 172.5 120 172.5" fill="black"/>
+              <path d="M120 67.5C90.75 67.5 67.5 90.75 67.5 120C67.5 149.25 90.75 172.5 120 172.5" fill="white"/>
+            </g>
+            <path class="tema-anel" d="M120 3.75C55.5 3.75 3.75 55.5 3.75 120C3.75 184.5 55.5 236.25 120 236.25C184.5 236.25 236.25 184.5 236.25 120C236.25 55.5 184.5 3.75 120 3.75ZM120 214.5V172.5C90.75 172.5 67.5 149.25 67.5 120C67.5 90.75 90.75 67.5 120 67.5V25.5C172.5 25.5 214.5 67.5 214.5 120C214.5 172.5 172.5 214.5 120 214.5Z" fill="black"/>
+          </svg>
+        </button>
+        <button id="botao-idioma" class="botao-idioma" type="button" aria-label="Mudar para inglês" title="Mudar para inglês">EN</button>
       </div>
 
       <div class="perfil">
-        <a class="nome" href="index.html">João Pedro <span>Silva Dantas</span></a>
-        <img class="foto" src="/img/foto.webp" width="480" height="480" alt="Foto de João Pedro Silva Dantas">
-        <p class="resumo">Estudante de Engenharia de Software na PUC Minas, com interesse em desenvolvimento backend e olhar de designer.</p>
+        <div class="nome-bloco">
+          <p class="giz saudacao" aria-hidden="true" data-i18n="saudacao">oi, eu sou o</p>
+          <h1 class="nome"><span class="nome-1">João Pedro</span> <span class="nome-2">Silva Dantas</span></h1>
+        </div>
+        <figure class="foto-bloco">
+          <img class="foto" src="/img/foto.webp" width="480" height="480" alt="Foto de João Pedro Silva Dantas" data-i18n-alt="foto-alt">
+          <figcaption class="giz legenda-foto" data-i18n="legenda-foto">eng. de software @ PUC Minas</figcaption>
+        </figure>
+        <p class="resumo" data-i18n="resumo">Estudante do 2º período de Engenharia de Software na PUC Minas, com interesse em desenvolvimento backend e olhar de designer.</p>
       </div>
 
     </div>
 
-    <!-- BARRA DE NAVEGAÇÃO -->
-    <nav class="menu" aria-label="Menu principal">
+    <!-- menu das abas -->
+    <nav class="menu" aria-label="Seções do portfólio">
       <ul class="container">
-        <li><a href="index.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Sobre mim</span></a></li>
-        <li><a href="projetos.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span>Projetos</span></a></li>
-        <li><a href="experiencias.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span>Experiências</span></a></li>
-        <li><a href="contato.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>Contato</span></a></li>
+        <li><a class="botao-pagina" href="#sobre" data-aba="sobre" aria-current="page"><span class="inner"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span data-i18n="aba-sobre">Sobre mim</span></span><span class="circle" aria-hidden="true"><span>→</span></span></a></li>
+        <li><a class="botao-pagina" href="#projetos" data-aba="projetos"><span class="inner"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg><span data-i18n="aba-projetos">Projetos</span></span><span class="circle" aria-hidden="true"><span>→</span></span></a></li>
+        <li><a class="botao-pagina" href="#experiencias" data-aba="experiencias"><span class="inner"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span data-i18n="aba-experiencias">Experiências</span></span><span class="circle" aria-hidden="true"><span>→</span></span></a></li>
+        <li><a class="botao-pagina" href="#contato" data-aba="contato"><span class="inner"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span data-i18n="aba-contato">Contato</span></span><span class="circle" aria-hidden="true"><span>→</span></span></a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ÁREA DE CONTEÚDO -->
+  <!-- conteúdo: as 4 abas, só uma aparece por vez -->
   <main class="container conteudo">
-    <h1 class="so-leitor-de-tela">Sobre mim</h1>
 
-    <section class="texto-sobre">
-      <p>Sou estudante de Engenharia de Software na PUC Minas e gosto de transformar ideias em soluções simples, funcionais e fáceis de usar. Tenho afinidade especial com desenvolvimento backend, mas ainda estou descobrindo qual área da tecnologia combina mais comigo.</p>
-      <p>Aprendo melhor na prática, criando projetos e explorando novas tecnologias pelo caminho. Também tenho experiência com design, criando identidades visuais, logos e materiais digitais, e levo esse olhar para os meus projetos. Fora da tela, pratico jiu-jitsu e acompanho o Atlético Mineiro.</p>
-      <p>Busco crescer na área de tecnologia por meio de projetos, estudos e experiências que me desafiem a evoluir constantemente.</p>
-    </section>
+    <!-- aba: sobre mim -->
+    <section class="aba" id="secao-sobre" data-aba="sobre" aria-labelledby="titulo-sobre">
+      <h2 class="so-leitor-de-tela" id="titulo-sobre" data-i18n="aba-sobre">Sobre mim</h2>
+      <div class="sobre-grade">
+        <div class="texto-sobre">
+          <p data-i18n="sobre-p1">Sou estudante de Engenharia de Software na PUC Minas: comecei o curso em 2026 e hoje estou no 2º período. Gosto de transformar ideias em soluções simples, funcionais e fáceis de usar. Tenho afinidade especial com desenvolvimento backend, mas ainda estou descobrindo qual área da tecnologia combina mais comigo.</p>
+          <p data-i18n="sobre-p2">Aprendo melhor na prática, criando projetos e explorando novas tecnologias pelo caminho. Também tenho experiência com design, criando identidades visuais, logos e materiais digitais, e levo esse olhar para os meus projetos. Fora da tela, pratico jiu-jitsu e acompanho o Atlético Mineiro.</p>
+          <p data-i18n="sobre-p3">Busco crescer na área de tecnologia por meio de projetos, estudos e experiências que me desafiem a evoluir constantemente.</p>
+        </div>
 
-    <section>
-      <h2 class="titulo-secao">Tecnologias que uso:</h2>
+        <dl class="fatos">
+          <div>
+            <dt data-i18n="fato-formacao">Formação</dt>
+            <dd data-i18n="fato-formacao-valor">Engenharia de Software · PUC Minas</dd>
+            <dd class="fato-extra" data-i18n="fato-formacao-extra">Comecei em 2026 · 2º período · conclusão prevista em 2029</dd>
+          </div>
+          <div>
+            <dt data-i18n="fato-foco">Foco</dt>
+            <dd data-i18n="fato-foco-valor">Desenvolvimento backend e web</dd>
+          </div>
+          <div>
+            <dt data-i18n="fato-idiomas">Idiomas</dt>
+            <dd data-i18n="fato-idiomas-valor">Português nativo · Inglês e espanhol intermediários</dd>
+          </div>
+          <div>
+            <dt data-i18n="fato-curto">Também curto</dt>
+            <dd data-i18n="fato-curto-valor">Design, jiu-jitsu e o Galo</dd>
+          </div>
+          <a class="botao-curriculo" href="/curriculo/Curriculo_Joao_Pedro_Silva_Dantas.pdf" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+            <span data-i18n="curriculo">Baixar meu currículo (PDF)</span>
+          </a>
+        </dl>
+      </div>
+
+      <h3 class="titulo-secao"><span data-i18n="tecnologias-titulo">Tecnologias que uso:</span> <span class="giz giz-nota" aria-hidden="true" data-i18n="tecnologias-nota">e contando!</span></h3>
       <ul class="tecnologias">
-        <li><img src="/img/tech/java.svg" width="56" height="56" alt=""><span>Java</span></li>
-        <li><img src="/img/tech/python.svg" width="56" height="56" alt=""><span>Python</span></li>
-        <li><img src="/img/tech/javascript.svg" width="56" height="56" alt=""><span>JavaScript</span></li>
-        <li><img src="/img/tech/html5.svg" width="56" height="56" alt=""><span>HTML</span></li>
-        <li><img src="/img/tech/css3.svg" width="56" height="56" alt=""><span>CSS</span></li>
-        <li><img src="/img/tech/vitejs.svg" width="56" height="56" alt=""><span>Vite</span></li>
-        <li><img src="/img/tech/spring.svg" width="56" height="56" alt=""><span>Spring Boot</span></li>
-        <li><img src="/img/tech/git.svg" width="56" height="56" alt=""><span>Git</span></li>
-        <li><img src="/img/tech/github.svg" width="56" height="56" alt=""><span>GitHub</span></li>
-        <li><img src="/img/tech/vscode.svg" width="56" height="56" alt=""><span>VS Code</span></li>
+          <li><img src="/img/tech/java.svg" width="56" height="56" alt=""><span>Java</span></li>
+          <li><img src="/img/tech/python.svg" width="56" height="56" alt=""><span>Python</span></li>
+          <li><img src="/img/tech/javascript.svg" width="56" height="56" alt=""><span>JavaScript</span></li>
+          <li><img src="/img/tech/html5.svg" width="56" height="56" alt=""><span>HTML</span></li>
+          <li><img src="/img/tech/css3.svg" width="56" height="56" alt=""><span>CSS</span></li>
+          <li><img src="/img/tech/bootstrap.svg" width="56" height="56" alt=""><span>Bootstrap</span></li>
+          <li><img src="/img/tech/vitejs.svg" width="56" height="56" alt=""><span>Vite</span></li>
+          <li><img src="/img/tech/spring.svg" width="56" height="56" alt=""><span>Spring Boot</span></li>
+          <li><img src="/img/tech/git.svg" width="56" height="56" alt=""><span>Git</span></li>
+          <li><img src="/img/tech/github.svg" width="56" height="56" alt=""><span>GitHub</span></li>
+          <li><img src="/img/tech/vscode.svg" width="56" height="56" alt=""><span>VS Code</span></li>
       </ul>
     </section>
+
+    <!-- aba: projetos -->
+    <section class="aba" id="secao-projetos" data-aba="projetos" aria-labelledby="titulo-projetos">
+      <h2 class="so-leitor-de-tela" id="titulo-projetos" data-i18n="aba-projetos">Projetos</h2>
+      <h3 class="titulo-secao"><span data-i18n="projetos-titulo">Linha do tempo de projetos</span></h3>
+      <!-- os cards são montados pelo src/js/projetos.js a partir do src/data/projetos.json -->
+      <ol class="linha-do-tempo" id="lista-projetos"></ol>
+    </section>
+
+    <!-- aba: experiências -->
+    <section class="aba" id="secao-experiencias" data-aba="experiencias" aria-labelledby="titulo-experiencias">
+      <h2 class="so-leitor-de-tela" id="titulo-experiencias" data-i18n="aba-experiencias">Experiências</h2>
+      <!-- os cards são montados pelo src/js/experiencias.js a partir do src/data/experiencias.json -->
+      <ul class="experiencias" id="lista-experiencias"></ul>
+    </section>
+
+    <!-- aba: contato -->
+    <section class="aba" id="secao-contato" data-aba="contato" aria-labelledby="titulo-contato">
+      <h2 class="so-leitor-de-tela" id="titulo-contato" data-i18n="aba-contato">Contato</h2>
+      <h3 class="titulo-secao"><span data-i18n="contato-titulo">Contato rápido:</span> <span class="giz giz-nota" aria-hidden="true" data-i18n="contato-nota">manda um oi!</span></h3>
+      <ul class="icones">
+        <li><a href="https://github.com/joaodantas-eng" target="_blank" rel="noopener" title="GitHub"><img src="/img/contato/github.svg" width="40" height="40" alt="GitHub"></a></li>
+        <li><a href="mailto:joaopedrosilvadantas3@gmail.com" title="E-mail"><img src="/img/contato/gmail.svg" width="40" height="40" alt="E-mail"></a></li>
+        <li><a href="https://wa.me/5537991705517" target="_blank" rel="noopener" title="WhatsApp"><img src="/img/contato/whatsapp.svg" width="40" height="40" alt="WhatsApp"></a></li>
+        <li><a href="https://www.linkedin.com/in/joaopedrosdantas/" target="_blank" rel="noopener" title="LinkedIn"><img src="/img/contato/linkedin.svg" width="40" height="40" alt="LinkedIn"></a></li>
+        <li><a href="https://www.instagram.com/joaopedrosilvadantas/" target="_blank" rel="noopener" title="Instagram"><img src="/img/contato/instagram.svg" width="40" height="40" alt="Instagram"></a></li>
+      </ul>
+
+      <h3 class="titulo-secao"><span data-i18n="form-titulo">Formulário</span></h3>
+      <form class="formulario" id="form-contato" novalidate>
+        <div class="coluna">
+          <label for="nome" data-i18n="form-nome">Nome</label>
+          <input id="nome" name="nome" type="text" autocomplete="name" aria-describedby="erro-nome">
+          <p class="erro-campo" id="erro-nome" aria-live="polite"></p>
+
+          <label for="email" data-i18n="form-email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" aria-describedby="erro-email">
+          <p class="erro-campo" id="erro-email" aria-live="polite"></p>
+        </div>
+        <div class="coluna coluna-mensagem">
+          <label for="mensagem" data-i18n="form-mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6" aria-describedby="erro-mensagem"></textarea>
+          <p class="erro-campo" id="erro-mensagem" aria-live="polite"></p>
+        </div>
+        <div class="envio">
+          <button class="botao" id="botao-enviar" type="submit" data-i18n="form-enviar">Enviar mensagem</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </div>
+      </form>
+    </section>
+
   </main>
 
-  <!-- RODAPÉ -->
+  <!-- janela da imagem ampliada dos projetos -->
+  <dialog class="visualizador" id="visualizador" aria-labelledby="visualizador-legenda">
+    <form method="dialog">
+      <button class="visualizador-fechar" type="submit" aria-label="Fechar imagem" data-i18n-aria="fechar-imagem">✕</button>
+    </form>
+    <img id="visualizador-img" src="" alt="">
+    <p class="visualizador-legenda" id="visualizador-legenda"></p>
+  </dialog>
+
+  <!-- rodapé -->
   <footer class="rodape">
     <div class="container rodape-conteudo">
       <p>© 2026 João Pedro Silva Dantas</p>
       <ul>
-        <li><a href="https://github.com/joaodantas-eng" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-silva-dantas-0144103b9/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a class="link-animado" href="https://github.com/joaodantas-eng" target="_blank" rel="noopener"><span>GitHub</span><svg class="link-seta" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1.004 9.166 9.337.833m0 0v8.333m0-8.333H1.004" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a class="link-animado" href="https://www.linkedin.com/in/joaopedrosdantas/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="link-seta" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M1.004 9.166 9.337.833m0 0v8.333m0-8.333H1.004" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
       </ul>
+      <p class="credito" data-i18n="credito">Animações adaptadas de Skiper UI e Bencho</p>
     </div>
   </footer>
 

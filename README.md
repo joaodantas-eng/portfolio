@@ -1,3 +1,4 @@
+
 # 🏷️ Portfólio Profissional - João Pedro Silva Dantas 👨‍💻
 
 > [!NOTE]
@@ -7,7 +8,7 @@
   <tr>
     <td width="800px">
       <div align="justify">
-        Este projeto é o <b>Laboratório 01</b> da disciplina de <b>Desenvolvimento e Integração de Aplicações Web (DIAW)</b>, do curso de Engenharia de Software da PUC Minas. O site reúne quatro páginas (<i>Sobre mim</i>, <i>Projetos</i>, <i>Experiências</i> e <i>Contato</i>) e foi construído com <b>Vite</b>, HTML, CSS e JavaScript. O desenvolvimento acontece em três sprints: planejamento e protótipo, funcionalidades principais, e hospedagem com finalização.
+        Este projeto é o <b>Laboratório 01</b> da disciplina de <b>Desenvolvimento e Integração de Aplicações Web (DIAW)</b>, do curso de Engenharia de Software da PUC Minas. O site é uma página única com quatro abas (<i>Sobre mim</i>, <i>Projetos</i>, <i>Experiências</i> e <i>Contato</i>) e foi construído com <b>Vite</b>, HTML, CSS e JavaScript. O desenvolvimento acontece em três sprints: planejamento e protótipo, funcionalidades principais, e hospedagem com finalização.
       </div>
     </td>
     <td>
@@ -22,7 +23,7 @@
 
 ## 🚧 Status do Projeto
 
-![Sprint](https://img.shields.io/badge/Sprint-1%20de%203-f97316?style=for-the-badge)
+![Sprint](https://img.shields.io/badge/Sprint-2%20de%203-f97316?style=for-the-badge)
 ![Vite](https://img.shields.io/badge/Vite-8.x-007ec6?style=for-the-badge&logo=vite&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-007ec6?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-007ec6?style=for-the-badge&logo=css3&logoColor=white)
@@ -31,7 +32,7 @@
 | Sprint | Entrega | Status |
 | :--- | :--- | :---: |
 | **Lab01S01** | Planejamento, wireframes, protótipo inicial, navegação e layout base | ✅ Entregue |
-| **Lab01S02** | Funcionalidades principais (idioma PT/EN, timeline dinâmica, formulário, validações) | ⏳ A fazer |
+| **Lab01S02** | Funcionalidades principais (idioma PT/EN, timeline dinâmica, formulário, validações) | ✅ Entregue |
 | **Lab01S03** | Hospedagem na nuvem, ajustes finais e README final | ⏳ A fazer |
 
 ---
@@ -62,7 +63,7 @@
   > 💻 **Descrição:** Site publicado gratuitamente na nuvem (Vercel).
 * 🎨 **Protótipos:** [Wireframes em PDF](docs/wireframe.pdf)
   > 🖌️ **Descrição:** Wireframes de média fidelidade das quatro páginas, feitos no Figma.
-* 💻 **Código:** [Repositório no GitHub](<https://github.com/joaodantas-eng/portfolio.git>)
+* 💻 **Código:** [Repositório no GitHub](<URL_DO_SEU_REPOSITÓRIO>)
 
 ---
 
@@ -70,7 +71,7 @@
 
 **Por que ele existe:** um portfólio é o cartão de visita de quem está começando na área de tecnologia. Este site reúne em um só lugar quem eu sou, o que já construí e como me encontrar.
 
-**Qual problema resolve:** recrutadores e colegas precisam entender rápido a trajetória, as habilidades e os projetos de uma pessoa. Em vez de links soltos, o site organiza tudo em quatro páginas simples, com uma linha do tempo que mostra a evolução dos projetos.
+**Qual problema resolve:** recrutadores e colegas precisam entender rápido a trajetória, as habilidades e os projetos de uma pessoa. Em vez de links soltos, o site organiza tudo em quatro abas simples, com uma linha do tempo que mostra a evolução dos projetos.
 
 **Contexto:** acadêmico (Laboratório 01 de DIAW, PUC Minas) e profissional (porta de entrada para oportunidades na área de tecnologia).
 
@@ -83,14 +84,24 @@
 
 ## ✨ Funcionalidades Principais
 
-- 🧭 **Navegação entre páginas:** barra fixa com as quatro páginas, que destaca em laranja a página atual.
-- 👤 **Sobre mim:** apresentação e as tecnologias que uso, com logo e nome de cada uma.
-- 🕒 **Linha do tempo de projetos:** do mais antigo ao mais recente, com imagem, descrição, tecnologias e links (código, site ou demo).
-- 💼 **Experiências:** experiências profissionais, trabalhos como designer e sites que desenvolvi.
+- 🧭 **Navegação por abas, sem recarregar:** o menu troca o conteúdo na mesma página, então o cabeçalho e as animações não reiniciam. Cada aba tem seu endereço (`#sobre`, `#projetos`, `#experiencias`, `#contato`), e o botão "voltar" do navegador funciona.
+- 💊 **Botões em pílula:** no hover, uma seta aparece num círculo à direita. A aba atual fica em laranja.
+- 🌙 **Tema claro e escuro:** botão no canto superior direito. O novo tema aparece num círculo que cresce a partir do botão, e a escolha fica salva.
+- 🔗 **Links animados:** um fundo azul entra da esquerda e o link fica branco, com uma seta deslizando.
+- 🃏 **Cards que "afundam":** as imagens dos cards inclinam e afundam sob o cursor, com sombra e brilho que acompanham o ponteiro.
+- 👤 **Sobre mim:** apresentação, formação (Engenharia de Software na PUC Minas, início em 2026, 2º período, conclusão prevista em 2029), idiomas, as tecnologias que uso e um botão para **baixar o currículo em PDF**.
+- 🕒 **Linha do tempo de projetos:** do mais antigo ao mais recente, com imagem, descrição, tecnologias e links (código, site ou demo). Clicar no print abre a **imagem ampliada**.
+- 💼 **Experiências:** graduação, evento técnico (We Make Software), experiências profissionais, trabalhos como designer e sites que desenvolvi.
 - 📨 **Contato:** ícones clicáveis (GitHub, e-mail, WhatsApp, LinkedIn e Instagram) e formulário.
-- 📱 **Design responsivo:** layout adaptado para desktop, tablet e celular.
+- ✏️ **Detalhes "escritos a giz":** a fonte Chalk aparece em pequenas anotações (saudação, datas da linha do tempo e notas ao lado dos títulos).
+- 📱 **Design responsivo:** usa a largura toda da tela no desktop e se adapta a tablet e celular.
 
-**Previstas para a Sprint 2:** 🌐 versão em português e inglês, 🌙 botão de tema, 🕒 timeline gerada dinamicamente por JavaScript e ✉️ envio do formulário por e-mail com validações.
+**Funcionalidades da Sprint 2:**
+
+- 🌐 **Português e inglês:** o botão PT/EN traduz o site inteiro na hora, sem recarregar, e a escolha fica salva. Os textos ficam em `src/data/textos.json`.
+- 🕒 **Timeline dinâmica:** os projetos ficam em `src/data/projetos.json`. O JavaScript ordena por data e monta os cards; para adicionar um projeto, basta incluir um item no arquivo. As experiências seguem a mesma ideia (`src/data/experiencias.json`).
+- ✉️ **Formulário funcional:** a mensagem chega no meu e-mail pelo **EmailJS**.
+- ✅ **Validações:** nome com pelo menos 2 letras, e-mail em formato válido e mensagem com pelo menos 10 caracteres. Os erros aparecem embaixo de cada campo, no idioma escolhido, e somem conforme a pessoa corrige.
 
 ---
 
@@ -100,13 +111,24 @@
 
 * **Build Tool:** [Vite](https://vite.dev/) 8.x (servidor de desenvolvimento e build)
 * **Linguagens:** HTML5, CSS3 e JavaScript (módulos ES)
-* **Estilização:** CSS puro, com Grid, Flexbox, variáveis CSS e media queries
-* **Fontes:** [Fontsource](https://fontsource.org/) (Manrope e Bricolage Grotesque), instaladas via npm
+* **Estilização:** CSS puro, com Grid, Flexbox, variáveis CSS, gradientes e media queries
+* **Animação da troca de tema:** [View Transitions API](https://developer.mozilla.org/pt-BR/docs/Web/API/View_Transition_API) do navegador
+* **Envio de e-mail:** [EmailJS](https://www.emailjs.com/) (`@emailjs/browser`)
+* **Fontes:** [Fontsource](https://fontsource.org/) (Unbounded nos títulos e Plus Jakarta Sans no texto), instaladas via npm, e **Chalk** (arquivo próprio, em `src/assets/fonts`) nos detalhes
 * **Ícones das tecnologias:** [Devicon](https://devicon.dev/) e [Simple Icons](https://simpleicons.org/), salvos no próprio projeto
+
+### 📦 Dependências (npm)
+
+| Pacote | Tipo | Para que serve |
+| :--- | :--- | :--- |
+| `vite` | desenvolvimento | Servidor local e build do site |
+| `@emailjs/browser` | produção | Enviar o formulário de contato por e-mail |
+| `@fontsource/unbounded` | produção | Fonte dos títulos |
+| `@fontsource/plus-jakarta-sans` | produção | Fonte dos textos |
 
 ### 🖥️ Back-end
 
-* Não há back-end. O envio do formulário será feito pelo **EmailJS** direto do front-end (Sprint 2).
+* Não há back-end próprio. O formulário envia as mensagens pelo **EmailJS**, direto do front-end.
 
 ### 🎨 Design
 
@@ -121,19 +143,29 @@
 
 ## 🏗 Arquitetura
 
-O site é uma **aplicação multipáginas (MPA) estática**, construída com Vite:
+O site é uma **página única estática**, construída com Vite:
 
-- **Quatro páginas HTML** na raiz (`index.html`, `projetos.html`, `experiencias.html` e `contato.html`). Cada uma tem o mesmo cabeçalho, a mesma barra de navegação e o mesmo rodapé, e muda apenas a área de conteúdo.
-- **Um único ponto de entrada** (`src/main.js`) carregado por todas as páginas. Ele importa as fontes e o CSS do site.
+- **Um só `index.html`** com o cabeçalho, a barra de navegação, o rodapé e as quatro seções (abas). Só uma aba aparece por vez.
+- **Troca de abas por endereço (`#`):** os botões do menu apontam para `#sobre`, `#projetos` etc. O `src/js/abas.js` escuta a mudança do endereço e guarda a aba aberta em `<html data-aba="...">`; o CSS mostra só a seção correspondente. Um script curto no `<head>` faz a mesma escolha antes de a página aparecer, para nada piscar.
+- **Dados separados do código:** textos, projetos e experiências ficam em arquivos JSON na pasta `src/data`, em português e inglês.
+- **Um único ponto de entrada** (`src/main.js`), que importa as fontes, o CSS e os scripts:
+  - `src/js/idioma.js`: troca português/inglês e avisa os outros scripts quando o idioma muda;
+  - `src/js/projetos.js` e `src/js/experiencias.js`: montam os cards a partir dos JSON;
+  - `src/js/formulario.js`: valida e envia o formulário pelo EmailJS;
+  - `src/js/abas.js`: troca de abas sem recarregar a página;
+  - `src/js/ampliar.js`: abre o print do projeto em tamanho grande;
+  - `src/js/link.js`: cria os links animados;
+  - `src/js/tema.js`: botão de tema claro/escuro (salva a escolha no `localStorage`);
+  - `src/js/tilt.js`: efeito de inclinação dos cards, com uma "mola" que dá peso ao movimento.
+- **Tema escuro com variáveis CSS:** as cores ficam em `:root` e são trocadas em `[data-theme="dark"]`. O mesmo script do `<head>` aplica o tema salvo antes de a página aparecer.
 - **Um único arquivo de estilos** (`src/styles/style.css`), com as cores e fontes definidas em variáveis CSS (`:root`), o que facilita manter a identidade visual.
 - **Arquivos estáticos** (fotos, prints dos projetos e ícones) na pasta `public/`.
 
 **Decisões:**
 - **Vite** foi escolhido por ser exigência do laboratório e por oferecer servidor local rápido e build otimizado.
-- **Páginas separadas** seguem o wireframe e deixam cada seção com seu próprio endereço.
-- **Cabeçalho repetido** em cada página, por simplicidade. Na Sprint 2 posso avaliar reaproveitá-lo.
+- **Página única com abas**, em vez de páginas separadas: ao trocar de seção, o cabeçalho, o menu e as animações continuam no lugar, e o conteúdo novo entra com uma transição curta. A divisão em quatro seções do wireframe foi mantida.
 
-**Paleta:** fundo branco, azul (`#0f2d6b` e `#2563eb`) como cor secundária e laranja (`#f97316`) apenas nos detalhes: página ativa no menu, borda da foto e projeto em andamento.
+**Paleta:** fundo branco, azul (`#0f2d6b` → `#3b82f6`) como cor secundária e laranja (`#ea580c` → `#fbbf24`) nos detalhes, sempre em gradientes: aba ativa no menu, linha do tempo, títulos e projeto em andamento.
 
 ---
 
@@ -163,7 +195,24 @@ Todas as páginas compartilham o mesmo cabeçalho (nome, foto, resumo e botões 
 
 ### 🔑 Variáveis de Ambiente
 
-Esta sprint **não usa variáveis de ambiente**. Na Sprint 2, o envio do formulário pelo EmailJS usará chaves públicas, que serão documentadas aqui.
+O envio do formulário usa três chaves do EmailJS. Elas ficam no arquivo **`.env.local`**, na raiz do projeto, que **não vai para o GitHub** (está no `.gitignore`). O arquivo `.env.example` mostra o formato:
+
+| Variável | Descrição | Exemplo |
+| :--- | :--- | :--- |
+| `VITE_EMAILJS_SERVICE_ID` | ID do serviço de e-mail conectado no EmailJS | `service_xxxxxxx` |
+| `VITE_EMAILJS_TEMPLATE_ID` | ID do template da mensagem | `template_xxxxxxx` |
+| `VITE_EMAILJS_PUBLIC_KEY` | Chave pública da conta do EmailJS | `xxxxxxxxxxxxxxxxx` |
+
+Para rodar localmente, copie o `.env.example` para `.env.local` e preencha:
+
+```bash
+cp .env.example .env.local
+```
+
+> [!NOTE]
+> As variáveis começam com `VITE_` porque o Vite só deixa o código do navegador ler variáveis com esse prefixo. A chave do EmailJS é pública (feita para ficar no front-end); para mais segurança, no painel do EmailJS dá para permitir envios apenas a partir do domínio do site.
+
+**Na Vercel (Sprint 3):** cadastre as mesmas três variáveis em *Project Settings → Environment Variables* antes do deploy.
 
 ---
 
@@ -172,7 +221,7 @@ Esta sprint **não usa variáveis de ambiente**. Na Sprint 2, o envio do formul�
 1.  **Clone o repositório:**
 
 ```bash
-git clone <https://github.com/joaodantas-eng/portfolio.git>
+git clone <URL_DO_SEU_REPOSITÓRIO>
 cd <pasta-do-projeto>
 ```
 
@@ -218,7 +267,8 @@ O deploy será feito na **Vercel** na Sprint 3:
     * **Framework Preset:** Vite
     * **Build Command:** `npm run build`
     * **Output Directory:** `dist`
-4.  Clique em **Deploy**. A cada `git push` na branch `main`, uma nova versão é publicada.
+4.  Em **Environment Variables**, cadastre as três variáveis do EmailJS (veja [Variáveis de Ambiente](#-variáveis-de-ambiente)). Sem elas, o formulário não envia.
+5.  Clique em **Deploy**. A cada `git push` na branch `main`, uma nova versão é publicada.
 
 ---
 
@@ -226,27 +276,43 @@ O deploy será feito na **Vercel** na Sprint 3:
 
 ```
 .
-├── .gitignore                   # 🧹 Ignora node_modules e dist.
+├── .gitignore                   # 🧹 Ignora node_modules, dist e .env.local.
+├── .env.example                 # 🧩 Modelo das variáveis do EmailJS.
+├── .env.local                   # 🔒 Chaves do EmailJS (não versionado).
 ├── README.md                    # 📘 Documentação principal do projeto.
 ├── package.json                 # 📦 Dependências e scripts (dev, build, preview).
 ├── package-lock.json            # 🔒 Versões exatas das dependências.
-├── vite.config.js               # ⚙️ Configuração do Vite (as 4 páginas do site).
 │
-├── index.html                   # 🏠 Página Sobre mim.
-├── projetos.html                # 🕒 Página Projetos (linha do tempo).
-├── experiencias.html            # 💼 Página Experiências.
-├── contato.html                 # 📨 Página Contato.
+├── index.html                   # 🏠 Página única: cabeçalho, menu, as 4 abas e rodapé.
 │
 ├── /src                         # 📂 Código-fonte
-│   ├── main.js                  # 🚪 Ponto de entrada (importa fontes e estilos).
+│   ├── main.js                  # 🚪 Ponto de entrada (importa fontes, estilos e scripts).
+│   ├── /js
+│   │   ├── abas.js              # 🗂️ Troca de abas sem recarregar.
+│   │   ├── ampliar.js           # 🔍 Abre o print do projeto em tamanho grande.
+│   │   ├── experiencias.js      # 💼 Monta os cards de experiência.
+│   │   ├── formulario.js        # ✉️ Validação e envio do formulário (EmailJS).
+│   │   ├── idioma.js            # 🌐 Português / inglês.
+│   │   ├── link.js              # 🔗 Links animados.
+│   │   ├── projetos.js          # 🕒 Monta a linha do tempo.
+│   │   ├── tema.js              # 🌙 Botão de tema claro/escuro.
+│   │   └── tilt.js              # 🃏 Efeito de inclinação dos cards.
+│   ├── /data
+│   │   ├── textos.json          # 🌐 Textos do site em PT e EN.
+│   │   ├── projetos.json        # 🕒 Projetos da linha do tempo.
+│   │   └── experiencias.json    # 💼 Experiências.
+│   ├── /assets
+│   │   └── /fonts
+│   │       └── chalk.woff2      # ✏️ Fonte Chalk (detalhes escritos a giz).
 │   └── /styles
-│       └── style.css            # 🎨 Cores, layout e responsividade.
+│       └── style.css            # 🎨 Cores, temas, componentes e responsividade.
 │
 ├── /public                      # 🖼️ Arquivos estáticos, copiados sem alteração.
+│   ├── /curriculo               # 📄 Currículo em PDF (botão "Baixar meu currículo").
 │   └── /img
 │       ├── logo.svg             # 🏷️ Logo do projeto e favicon.
 │       ├── foto.webp            # 👤 Foto de perfil.
-│       ├── /projetos            # 🕒 Prints dos projetos.
+│       ├── /projetos            # 🕒 Prints dos projetos (e /grande, para a imagem ampliada).
 │       ├── /tech                # 🧰 Logos das tecnologias.
 │       └── /contato             # 📨 Ícones de contato.
 │
@@ -264,12 +330,24 @@ Capturas do protótipo funcionando.
 
 ### 🌐 Aplicação Web (desktop)
 
-| Tela | Captura de Tela |
+| Aba | Captura de Tela |
 | :---: | :---: |
 | **Sobre mim** | **Projetos** |
 | <img src="docs/prints/desktop-sobre-mim.png" alt="Página Sobre mim no desktop" width="400px"> | <img src="docs/prints/desktop-projetos.png" alt="Página Projetos no desktop" width="400px"> |
 | **Experiências** | **Contato** |
 | <img src="docs/prints/desktop-experiencias.png" alt="Página Experiências no desktop" width="400px"> | <img src="docs/prints/desktop-contato.png" alt="Página Contato no desktop" width="400px"> |
+
+### 🌐 Em inglês
+
+| Sobre mim | Projetos |
+| :---: | :---: |
+| <img src="docs/prints/desktop-en-sobre-mim.png" alt="Página Sobre mim em inglês" width="400px"> | <img src="docs/prints/desktop-en-projetos.png" alt="Página Projetos em inglês" width="400px"> |
+
+### 🌙 Tema escuro
+
+| Sobre mim | Projetos |
+| :---: | :---: |
+| <img src="docs/prints/desktop-escuro-sobre-mim.png" alt="Página Sobre mim no tema escuro" width="400px"> | <img src="docs/prints/desktop-escuro-projetos.png" alt="Página Projetos no tema escuro" width="400px"> |
 
 ### 📱 Aplicação Web (celular)
 
@@ -282,9 +360,12 @@ Capturas do protótipo funcionando.
 ## 🔗 Documentações utilizadas
 
 * 📖 **Build Tool:** [Documentação oficial do **Vite**](https://vite.dev/guide/)
-* 📖 **Várias páginas com Vite:** [Guia de Build (Multi-Page App)](https://vite.dev/guide/build.html#multi-page-app)
 * 📖 **Fontes:** [Fontsource](https://fontsource.org/docs/getting-started/install)
 * 📖 **Ícones:** [Devicon](https://devicon.dev/) e [Simple Icons](https://simpleicons.org/)
+* 📖 **Troca de tema:** [MDN - View Transition API](https://developer.mozilla.org/pt-BR/docs/Web/API/View_Transition_API)
+* 📖 **Formulário:** [Documentação do EmailJS](https://www.emailjs.com/docs/sdk/send/)
+* 📖 **Variáveis no Vite:** [Env Variables and Modes](https://vite.dev/guide/env-and-mode)
+* 📖 **Troca de abas:** [MDN - evento hashchange](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/hashchange_event)
 * 📖 **CSS:** [MDN - CSS Grid Layout](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout) e [MDN - Flexbox](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout)
 * 📖 **Hospedagem:** [Documentação da **Vercel** para Vite](https://vercel.com/docs/frameworks/vite)
 
@@ -294,7 +375,7 @@ Capturas do protótipo funcionando.
 
 | 👤 Nome | 🖼️ Foto | :octocat: GitHub | 💼 LinkedIn | 📤 Gmail |
 |---------|----------|-----------------|-------------|-----------|
-| João Pedro Silva Dantas | <div align="center"><img src="public/img/foto.webp" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/joaodantas-eng"><img src="public/img/contato/github.svg" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-silva-dantas-0144103b9/"><img src="public/img/contato/linkedin.svg" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:joaopedrosilvadantas3@gmail.com"><img src="public/img/contato/gmail.svg" width="50px" height="50px"></a></div> |
+| João Pedro Silva Dantas | <div align="center"><img src="public/img/foto.webp" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/joaodantas-eng"><img src="public/img/contato/github.svg" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/joaopedrosdantas/"><img src="public/img/contato/linkedin.svg" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:joaopedrosilvadantas3@gmail.com"><img src="public/img/contato/gmail.svg" width="50px" height="50px"></a></div> |
 
 ---
 
@@ -302,5 +383,18 @@ Capturas do protótipo funcionando.
 
 * [**Engenharia de Software PUC Minas**](https://www.instagram.com/engsoftwarepucminas/) - Pelo apoio institucional e pela estrutura acadêmica.
 * [**Prof. Dr. João Paulo Aramuni**](https://github.com/joaopauloaramuni) - Pela proposta do laboratório e pelo template de README.
+
+### 🧩 Créditos dos componentes
+
+Componentes adaptados para JavaScript puro (os originais são em React):
+
+| Componente | Onde uso | Fonte |
+| :--- | :--- | :--- |
+| **Skiper 26** (botão de tema, variante *circle*) | Botão de tema claro/escuro | [skiper-ui.com/v1/skiper26](https://skiper-ui.com/v1/skiper26) |
+| **Skiper 40** (link animado 5) | Links dos projetos, das experiências e do rodapé | [skiper-ui.com/v1/skiper40](https://skiper-ui.com/v1/skiper40) |
+| **Button 02** (pílula com seta) | Botões do menu das abas | [details.so/vault/button-02](https://www.details.so/vault/button-02) |
+| **Tilt card** | Imagens dos projetos e das experiências | [bencho.dev](https://bencho.dev/saved?c=tilt&theme=light) · licença MIT ([bencho.dev/licence](https://bencho.dev/licence)) |
+
+Os componentes do Skiper UI são de uso livre, com atribuição ao Skiper UI (por isso o crédito também aparece no rodapé do site). O botão de tema se baseia no conceito de [rudrodip](https://github.com/rudrodip/theme-toggle-effect).
 
 ---

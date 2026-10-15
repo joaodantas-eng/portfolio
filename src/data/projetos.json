@@ -1,0 +1,77 @@
+[
+  {
+    "id": "firefighter-radar",
+    "data": "2026-04",
+    "nome": "Firefighter Radar",
+    "imagem": "/img/projetos/firefighter-radar.webp",
+    "imagemGrande": "/img/projetos/grande/firefighter-radar.webp",
+    "alt": {
+      "pt": "Tela do Firefighter Radar com o mapa de focos de incêndio",
+      "en": "Firefighter Radar screen showing the wildfire map"
+    },
+    "descricao": {
+      "pt": "Projeto acadêmico em grupo para registrar e acompanhar focos de incêndio em um mapa, com perfis para bombeiros e brigadistas. Fui o líder do grupo e fiz a análise de focos no perfil do bombeiro.",
+      "en": "Academic group project to record and track wildfire spots on a map, with separate profiles for firefighters and volunteer brigades. I led the group and built the fire analysis feature in the firefighter profile."
+    },
+    "tecnologias": ["HTML", "CSS", "JavaScript", "Bootstrap", "JSON Server", "Leaflet"],
+    "links": { "privado": true },
+    "atual": false
+  },
+  {
+    "id": "drecut",
+    "data": "2026-06",
+    "nome": "Drecut: Fragmentos da Verdade",
+    "imagem": "/img/projetos/drecut.webp",
+    "imagemGrande": "/img/projetos/grande/drecut.webp",
+    "alt": {
+      "pt": "Tela do jogo Drecut com o mapa e dois personagens",
+      "en": "Drecut game screen with the map and two characters"
+    },
+    "descricao": {
+      "pt": "Jogo de investigação feito em grupo no projeto final de Introdução a Algoritmos. O jogador explora o mapa, conversa com NPCs e resolve desafios. Fiquei com a movimentação do jogador e as telas de menu.",
+      "en": "Detective game built as a group for the final project of Introduction to Algorithms. Players explore the map, talk to NPCs and solve challenges. I was in charge of player movement and the menu screens."
+    },
+    "tecnologias": ["Python", "Pygame", "Pytest"],
+    "links": { "github": "https://github.com/5byp8r/TrabalhoFinalIntroAlgs" },
+    "atual": false
+  },
+  {
+    "id": "jr-film",
+    "data": "2026-07",
+    "nome": "JR Film: Site Institucional",
+    "imagem": "/img/projetos/jr-film.webp",
+    "imagemGrande": "/img/projetos/grande/jr-film.webp",
+    "alt": {
+      "pt": "Página inicial do site da JR Film, oficina mecânica de Nova Serrana",
+      "en": "Home page of the JR Film website, an auto repair shop in Nova Serrana"
+    },
+    "descricao": {
+      "pt": "Site de uma oficina mecânica real de Nova Serrana (MG), feito fora da faculdade para atender o negócio: serviços, promoções, depoimentos e contato por WhatsApp. Usei IA como apoio na implementação.",
+      "en": "Website for a real auto repair shop in Nova Serrana (Brazil), built outside college for an actual business: services, promotions, reviews and WhatsApp contact. I used AI as support during implementation."
+    },
+    "tecnologias": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "links": {
+      "github": "https://github.com/joaodantas-eng/jr-film-site",
+      "site": "https://jrfilm.vercel.app/"
+    },
+    "atual": false
+  },
+  {
+    "id": "nodus",
+    "data": "2026-09",
+    "nome": "Nodus",
+    "imagem": "/img/projetos/nodus.webp",
+    "imagemGrande": "/img/projetos/grande/nodus.webp",
+    "alt": {
+      "pt": "Tela inicial do Nodus, com menu lateral e plano do dia",
+      "en": "Nodus home screen with the side menu and the daily plan"
+    },
+    "descricao": {
+      "pt": "Dashboard pessoal de produtividade, com tarefas, agenda, finanças, hábitos, treinos, estudos, notas, leitura e diário. É o projeto em que estou trabalhando atualmente.",
+      "en": "Personal productivity dashboard with tasks, calendar, finances, habits, workouts, studies, notes, reading and a journal. It's the project I'm currently working on."
+    },
+    "tecnologias": [],
+    "links": { "demo": "https://demonodus.ai.studio/" },
+    "atual": true
+  }
+]
