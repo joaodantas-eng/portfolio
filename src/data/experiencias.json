@@ -72,7 +72,7 @@
     "cargo": { "pt": "Desenvolvimento de sites próprios", "en": "Personal web projects" },
     "lugar": { "pt": "Projetos pessoais", "en": "Side projects" },
     "links": [
-      { "texto": { "pt": "Nodus", "en": "Nodus" }, "href": "https://demonodus.ai.studio/" },
+      { "texto": { "pt": "Nodus", "en": "Nodus" }, "href": "https://demo.appnodus.com.br/" },
       { "texto": { "pt": "site da JP DROP", "en": "JP DROP website" }, "href": "https://jpdropco.vercel.app/" }
     ],
     "descricao": {
